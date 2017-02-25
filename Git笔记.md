@@ -3,6 +3,7 @@
 用户标识
 git config --global user.name lr
 git config --global user.email i@lr.cool
+git config --global push.default matching
 
 创建版本库
 git init
