@@ -33,11 +33,67 @@ long v=123456486L; //长整型
 boolean b=true;   //布尔型
 ```
 ###条件语句
-
+if语句
 ```
 int i=5;
 if (i > 0)
 {
 System.out.println("i greater than 0");
+}
+```
+if-else语句
+```
+int i=5;
+if (i>6)
+{
+System.out.println("i >6");
+}
+else
+{
+System.out.println("i<=6");
+}
+```
+while语句
+```
+int i=0;
+while (i<=5)
+{
+System.out.println(i);
+i++;
+}
+```
+for循环语句
+```
+for (int i=0;i<=5;i++)
+{
+System.out.println(i);
+}
+```
+###静态方法
+```
+public class Main
+{
+	public static void main(String[] args)
+	{
+		print("Hello");
+		
+	}
+	
+	static void print(String str)
+	{
+		System.out.println(str);
+	}
+}
+```
+有参数的静态方法
+```
+public static void main(String[] args)
+{
+int sum=mult(10,30);
+System.out.println(sum);
+}
+static int mult(int a,int b)
+{
+return a+b;
 }
 ```
